@@ -1,0 +1,237 @@
+body {
+    font-size: 18px;
+    background-color: hsl(221, 100%, 96%);
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 265px;
+    height: 390px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    left: 15px;
+    box-shadow: -10px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.resultado * {
+    margin: 20px;
+}
+
+.titulo-resultado {
+    font-size: 1em;
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 30px;
+}
+
+.avaliacao-media {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.avaliacao-media * {
+    margin: 0;
+}
+
+.avaliacao-media .media {
+    color: hsl(0, 0%, 100%);
+    font-size: 3em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.avaliacao-media span {
+    color: hsl(241, 38%, 77%);
+    font-size: 0.8em;
+    position: relative;
+    bottom: 35px;
+}
+
+.resultado .avaliacao-texto {
+    color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.resultado p {
+    margin: 10px 30px 25px;
+    color: hsl(241, 100%, 89%);
+    font-size: 0.8em;
+}
+
+.barra-lateral {
+    width: 305px;
+    height: 390px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 15px;
+    box-shadow: 10px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.barra-lateral * {
+    margin: 20px 35px;
+}
+
+.barra-lateral h2 {
+    color: hsl(224, 30%, 27%);
+    font-size: 1.3em;
+}
+
+.categorias li {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 8px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: hsl(221, 100%, 96%);
+}
+
+.categorias .memory,
+.categorias .verbal {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.categorias span {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.categorias .reaction .nome-categoria {
+    color: hsl(0, 100%, 67%);
+}
+
+.categorias .reaction {
+    background-color: hsla(0, 100%, 67%, 0.2);
+}
+
+.categorias .memory .nome-categoria {
+    color: hsl(39, 100%, 56%);
+}
+
+.categorias .memory {
+    background-color: hsla(39, 100%, 56%, 0.2);
+}
+
+.categorias .verbal .nome-categoria {
+    color: hsl(166, 100%, 37%);
+}
+
+.categorias .verbal {
+    background-color: hsla(166, 100%, 37%, 0.2);
+}
+
+.categorias .visual .nome-categoria {
+    color: hsl(234, 85%, 45%);
+}
+
+.categorias .visual {
+    background-color: hsla(234, 85%, 45%, 0.2);
+}
+
+.fa-eye,
+.fa-message,
+.fa-brain,
+.fa-bolt {
+    margin: 0;
+    padding: 0;
+}
+
+.hundred {
+    color: hsl(240, 7%, 66%);
+}
+
+.barra-lateral button {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 20px;
+    padding: 15px 90px;
+    position: relative;
+    left: 8px;
+    margin-top: 10px;
+    transition: scale 0.2s ease-in-out;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.barra-lateral button:hover {
+    scale: 1.1;
+}
+
+@media (max-width: 615px) {
+    body {
+        font-size: 17px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .resultado * {
+        margin: 10px auto;
+        left: 0;
+        right: 0;
+    }
+
+    .resultado {
+        left: 0px;
+        box-shadow: 10px -7px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 0px 0px 20px 20px;
+        width: 305px;
+        margin-bottom: -12px;
+        height: 350px;
+    }
+
+    .resultado .titulo-resultado {
+        margin-top: 20px;
+    }
+
+    .avaliacao-media span {
+        bottom: 20px;
+    }
+
+    .avaliacao-media .media {
+        margin-top: 30px;
+    }
+
+    .barra-lateral {
+        font-size: 1.2em;
+        margin: 0;
+        margin-bottom: 12px;
+        border-radius: 0;
+        height: 480px;
+    }
+
+    .barra-lateral h2 {
+        margin-top: 27px;
+        margin-bottom: -15px;
+    }
+
+    .categorias li {
+        padding: 15px;
+        margin: 30px 0px;
+    }
+
+    .barra-lateral button {
+        position: initial;
+        margin: 0 auto;
+        display: flex;
+    }
+}
